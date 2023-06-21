@@ -1,14 +1,22 @@
 def main():
-    m_amount = input('Enter the number of male students registered in a class.')
-    f_amount = input('Enter the number of female students registered in the above class.')
-    total_students = int(m_amount) + int(f_amount)
-    m_perc = ( int(m_amount) / int(total_students) ) 
-    f_perc = ( int(f_amount) / int(total_students) )
+    def percentage(part, whole):
+        percentage = float(part)/float(whole)
+        return float(percentage)
+    
+    m_amount = int(input('Enter the number of male students registered in a class: ')) #ask user for input for number of males
+    f_amount = int(input('Enter the number of female students registered in the above class: ')) #ask user for input for number of females
+
+    total_students = int(m_amount) + int(f_amount) #find the total number of students
+
+    
+    m_perc = format(float(percentage(m_amount, total_students)), '.2%') #calculate the percentage of the class that is male
+    f_perc = format(float(percentage(f_amount, total_students)), '.2%') #calculate the percentage of the class that is female
+
     print ('The total number of students:', total_students)
-    print ('The amount of females:', m_amount)
+    print ('The amount of males:', m_amount)
     print ('The amount of females:', f_amount)
-    print ('The percentage of males:', format (m_perc, '.2%'))
-    print ('The percentage of females:', format (f_perc, '.2%'))
+    print ('The percentage of males:', m_perc)
+    print ('The percentage of females:', f_perc)
     """
     ##################################################
     Complete your code here
