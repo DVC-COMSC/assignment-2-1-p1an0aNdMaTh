@@ -9,9 +9,11 @@ def main():
     total_students = int(m_amount) + int(f_amount) #find the total number of students
 
     
-    m_perc = format(float(percentage(m_amount, total_students)), '.2%') #calculate the percentage of the class that is male
-    f_perc = format(float(percentage(f_amount, total_students)), '.2%') #calculate the percentage of the class that is female
-
+    # m_perc = format(float(percentage(m_amount, total_students)), '.2%') #calculate the percentage of the class that is male
+    # f_perc = format(float(percentage(f_amount, total_students)), '.2%') #calculate the percentage of the class that is female
+    # m_perc = m_amount / total_students
+    # f_perc = f_amount / total_students
+    
     print ('The total number of students:', total_students)
     print ('The amount of males:', m_amount)
     print ('The amount of females:', f_amount)
